@@ -41,17 +41,7 @@ typedef struct link_s
 	struct binary_tree_s const *node;
 	struct link_s *next;
 } link_t;
-/**
-* struct list_of_list - Linkedlist of linkedlist node
-*
-* @node: Pointer to the node of likendlist
-* @next: Pointer to next node of list pointing to a linkedlist
-**/
-typedef struct list_of_list
-{
-	node_l *node;
-	struct list_of_list *next;
-} list_l;
+
 
 /**
 * queue - struct for level order traversal
