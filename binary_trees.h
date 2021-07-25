@@ -92,6 +92,10 @@ avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
 avl_t *array_to_avl(int *array, size_t size);
 avl_t *sorted_array_to_avl(int *array, size_t size);
 avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
+int binary_tree_is_heap(const binary_tree_t *tree);
+int is_heap(const binary_tree_t *tree);
+int is_complete(size_t size, size_t index, const binary_tree_t *tree);
+size_t size_of_bt(const binary_tree_t *tree);
 
 
 #endif /* BINARY_TREES_H */
