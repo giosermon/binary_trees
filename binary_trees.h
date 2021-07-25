@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stddef.h>
+#include <string.h>
 #include <limits.h>
 
 /**
@@ -40,6 +41,28 @@ typedef struct link_s
 	struct binary_tree_s const *node;
 	struct link_s *next;
 } link_t;
+/**
+* struct list_of_list - Linkedlist of linkedlist node
+*
+* @node: Pointer to the node of likendlist
+* @next: Pointer to next node of list pointing to a linkedlist
+**/
+typedef struct list_of_list
+{
+	node_l *node;
+	struct list_of_list *next;
+} list_l;
+
+/**
+* queue - struct for level order traversal
+* @node: pointer to binary_tree_t node
+* @next: pointer to next queue element
+**/
+typedef struct queue
+{
+	binary_tree_t *node;
+	struct queue *next;
+} queue;
 
 void binary_tree_print(const binary_tree_t *tree);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
