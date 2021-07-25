@@ -96,6 +96,19 @@ int binary_tree_is_heap(const binary_tree_t *tree);
 int is_heap(const binary_tree_t *tree);
 int is_complete(size_t size, size_t index, const binary_tree_t *tree);
 size_t size_of_bt(const binary_tree_t *tree);
+heap_t *heap_insert(heap_t **root, int value);
+heap_t *heapify_up(heap_t *new_node);
+binary_tree_t *remove_front(queue **head);
+queue *add_in_end(queue **head, binary_tree_t *node);
+void free_queue(queue **head);
+heap_t *array_to_heap(int *array, size_t size);
+int heap_extract(heap_t **root);
+heap_t *heapify_down(heap_t *new_node);
+binary_tree_t *removing_front(queue **head);
+queue *adding_in_end(queue **head, binary_tree_t *node);
+void swap(int *num1, int *num2);
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+size_t count_heap(heap_t *heap);
 
 
 #endif /* BINARY_TREES_H */
