@@ -42,9 +42,9 @@ typedef struct link_s
 	struct link_s *next;
 } link_t;
 
-
 /**
-* queue - struct for level order traversal
+* struct queue - struct for level order traversal
+*
 * @node: pointer to binary_tree_t node
 * @next: pointer to next queue element
 **/
